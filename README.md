@@ -28,8 +28,12 @@ optrun.sh runs all projectile-target combonatinos listed in projectile.txt;
 ```txt
 50.13,0.05,6,12,1,1,LIQMD
 ```
-means incident energy, and its standard deviation (MeV/nucleon), projectile Z, projectile A, target Z, target A, and text (not used).
+mean incident energy, and its standard deviation (MeV/nucleon), projectile Z, projectile A, target Z, target A, and text (not used), respectively.
 The number of incidnet particles is set as 100,000 (line 256 in pencil_ion.cc), and its simulation is repeated by N defined in optrun.sh.
 
+The cross section result file (e.g. NS2/CS_***, where *** is the time created listed in recorder_test.csv therein) shows the columns of
+"event", "ParticleNO", "particleName", "z", "a", "px", "py", "pz", "angle", "phi", "kenergy", and "mass".
+The angle means the polar angle, while phi means the azimuthal angle.
+The angluar distribution (differential cross section) in each fragment can be calculated by collecting the specific fragment and binning the angle data. The double differential cross section can be also calculated with the same manner.
 
 
