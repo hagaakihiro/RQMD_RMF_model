@@ -36,4 +36,5 @@ The cross section result file (e.g. NS2/CS_***, where *** is the time created li
 The angle means the polar angle, while phi means the azimuthal angle.
 The angluar distribution (differential cross section) in each fragment can be calculated by collecting the specific fragment and binning the angle data. The double differential cross section can be also calculated with the same manner.
 
+If you want to use the RMF models other than NS2, edit models.txt. The model parameters is found in Models folder (note that the present code only allows to use non-linear sigma models without momentum depndent forces). 
 
